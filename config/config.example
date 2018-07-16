@@ -1,0 +1,29 @@
+[rabbit]
+User = "guest"
+Pass = "guest"
+Host = "localhost"
+QueueName = "gendoc2"
+
+[common]
+StreamCount = 40
+PathToPhp = "/opt/local/bin/php71"
+PathToCreator = "/Users/fans/go/src/bitbucket.org/sotavant/rabbitOxpa/examples/pdfCreator.php"
+PathToPostScript = "/srv/www/dva14.ru/htdocs/bitrix/api/handlers/docGenSuccess.php"
+PathToPhpLog = "/Users/fans/go/src/bitbucket.org/sotavant/rabbitOxpa/log/PhpLog"
+PathToGoLog = "/Users/fans/go/src/bitbucket.org/sotavant/rabbitOxpa/log/GoLog"
+PathToResultDoc = "/Users/fans/go/src/bitbucket.org/sotavant/rabbitOxpa/examples/result/tasks"
+PathToResultZip = "/Users/fans/go/src/bitbucket.org/sotavant/rabbitOxpa/examples/result/zip"
+DocGenError = "Error: genDoc"
+DocCodeSalt = "salt"
+
+[database]
+User = "oxpa"
+Pass = "oxpa"
+Database = "oxpa"
+Table = "tasks"
+CodeField = "UF_CODE"
+ResultField = "UF_STATUS"
+LogField = "UF_INFO"
+SuccessCode = 115
+ErrorCode = 116
+TaskIdField = "ID"
